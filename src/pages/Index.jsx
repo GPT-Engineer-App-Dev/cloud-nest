@@ -1,3 +1,4 @@
+import logo from '../../public/images/logo.png';
 import { Box, Flex, Text, Button, VStack, Heading, Container, Spacer } from '@chakra-ui/react';
 import { FaCloud, FaStar, FaUsers } from 'react-icons/fa';
 
@@ -5,6 +6,7 @@ const Index = () => {
   return (
     <Box>
       <Flex as="nav" bg="gray.800" color="white" p={4} align="center">
+        <Image src={logo} alt="SaaS Company Logo" boxSize="50px" mr={5} />
         <Heading size="md" ml={5}>SaaS Company</Heading>
         <Spacer />
         <Button variant="ghost" mr={5}>Features</Button>
